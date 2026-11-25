@@ -1,0 +1,29 @@
+entity_id,name,unit_type,aka,description
+rip_plant_t2,"Type 2 RIP (ricin, abrin)",gene_family,RTA/RTB,Catalytic A chain plus lectin B chain; depurinates the sarcin/ricin loop of eukaryotic 28S rRNA.
+rip_plant_t1,"Type 1 RIP (PAP, MAP, trichosanthin)",gene_family,type 1 RIP,Single-domain RIP with no lectin chain; some members also depurinate bacterial 23S rRNA.
+stx,Shiga toxin (Stx1/Stx2),gene_family,verotoxin,"Bacterial AB5 RIP; A subunit carries the RIP fold, B pentamer binds Gb3."
+rip_spiroplasma,Spiroplasma RIP,gene_family,SRIP,RIP toxins of Drosophila defensive endosymbionts; depurinate wasp and nematode ribosomes.
+rip_mosquito,Culicine RIP (RIPAe1-3),gene_family,,"RIP genes in Aedes and Culex genomes, horizontally acquired and under purifying selection."
+rip_whitefly,Whitefly ribotoxin/RIP,gene_family,,RIP-domain genes in Bemisia and Trialeurodes acquired from plants.
+ribotoxin_fungal,"Fungal ribotoxin (alpha-sarcin, restrictocin)",gene_family,,Secreted RNase T1-family ribonuclease that cleaves one phosphodiester bond in the sarcin/ricin loop.
+ageritin,Ageritin,gene_family,ribotoxin-like protein,"Basidiomycete ribotoxin of a fold distinct from the alpha-sarcin family, cleaving the same loop."
+hirsutellin,Hirsutellin A,gene_family,HtA,Small insecticidal ribotoxin of entomopathogenic fungi.
+colicin_e3,Colicin E3,gene_family,,Cleaves 16S rRNA in the decoding centre of the target ribosome.
+colicin_e5,Colicin E5,gene_family,,Cleaves the anticodons of four queuosine-containing tRNAs.
+colicin_d,Colicin D,gene_family,,Cleaves the anticodon loop of tRNA-Arg isoacceptors.
+cdia_ct_trnase,CdiA-CT tRNase (colicin D-like/BECR),gene_family,,Polymorphic C-terminal tRNase domains of contact-dependent inhibition systems.
+srlase1,SRLase1,gene_family,,BECR-like RNase that requires EF-Tu to cleave the 23S sarcin/ricin loop.
+ribocin,Ribocin,gene_family,,Cleaves helix 69 of eukaryotic large-subunit rRNA.
+vapc20,VapC20,gene_family,,PIN-domain toxin-antitoxin ribonuclease that cleaves the sarcin/ricin loop of its own 23S rRNA.
+prrc,PrrC anticodon nuclease,gene_family,,Latent tRNA-Lys anticodon nuclease held inactive within a type IC restriction-modification complex.
+rloc,RloC,gene_family,,Wobble-nucleotide-excising tRNase gated by a Rad50-like DNA-damage sensor.
+gamma_toxin,Zymocin gamma-toxin,gene_family,Kluyveromyces lactis gamma-toxin,Eukaryal tRNA anticodon nuclease delivered by a chitinase-bearing killer complex.
+pat_toxin,Pichia acaciae toxin (PaOrf2),gene_family,PaT,Anticodon nuclease that excises a dinucleotide to defeat tRNA repair.
+diphtheria_toxin,Diphtheria toxin,gene_family,"DT, tox",ADP-ribosylates the diphthamide residue of eEF2.
+exotoxin_a,Pseudomonas exotoxin A,gene_family,"ExoA, ToxA",Diphthamide-specific mART that engages eEF2 by ribosome mimicry.
+saip,SAIP (Streptomyces antiquus insecticidal protein),gene_family,,Diphtheria-toxin-like exotoxin of Streptomyces that ADP-ribosylates insect eEF2; receptor is the insect protein Flower.
+t6ss_art_trna,T6SS ART Rhs tRNA-Thr toxin,gene_family,,Type VI secretion ADP-ribosyltransferase that modifies the anticodon loop of charged tRNA-Thr.
+thiostrepton,Thiostrepton,bgc,,Thiopeptide RiPP binding the 23S rRNA/L11 region of the 50S subunit.
+erythromycin,Erythromycin,bgc,,Macrolide polyketide binding the nascent peptide exit tunnel of the 50S subunit.
+kirromycin,Kirromycin,bgc,mocimycin,Elfamycin-class polyketide locking EF-Tu on the ribosome.
+odilorhabdin,Odilorhabdin,bgc,ODL,Cationic non-ribosomal peptide binding the 30S subunit.

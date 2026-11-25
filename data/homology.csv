@@ -1,0 +1,25 @@
+entity_id,fold,interpro_acc,pfam_acc,note
+rip_plant_t2,RIP (ricin A-chain) fold,IPR036041,,Ribosome-inactivating protein superfamily
+rip_plant_t1,RIP (ricin A-chain) fold,IPR036041,,
+stx,RIP (ricin A-chain) fold,IPR036041,,StxA carries the RIP fold
+rip_spiroplasma,RIP (ricin A-chain) fold,IPR001574,,
+rip_mosquito,RIP (ricin A-chain) fold,IPR001574,,
+rip_whitefly,RIP (ricin A-chain) fold,IPR001574,,
+ribotoxin_fungal,RNase T1 / ribotoxin fold,IPR016191,,Ribonuclease/ribotoxin homologous superfamily
+hirsutellin,RNase T1 / ribotoxin fold,IPR004025,,Fungal ribotoxin family
+ageritin,Ageritin fold,IPR062477,,Distinct from the alpha-sarcin ribotoxin family
+colicin_e3,Colicin E3 RNase fold,IPR036725,,
+colicin_e5,BECR fold,IPR038233,,Colicin D/E5 nuclease domain superfamily
+colicin_d,BECR fold,IPR036471,,
+cdia_ct_trnase,BECR fold,IPR040998,,Barnase-EndoU-ColicinE5/D-RelE like
+srlase1,BECR-like fold,,,BECR-like superfamily per structure-guided classification
+ribocin,uncharacterised RNase fold,,,Fold not yet assigned
+vapc20,PIN domain,,,
+prrc,ABC-ATPase + anticodon nuclease,,,PrrC NTPase domain with Rad50-like features
+rloc,Rad50-like ABC-ATPase + tRNase,,,
+gamma_toxin,gamma-toxin/Kluyveromyces ACNase fold,,,
+pat_toxin,gamma-toxin-like ACNase fold,,,Dissimilar primary structure to gamma-toxin
+diphtheria_toxin,DT-like mART fold,IPR000512,,
+saip,DT-like mART fold,IPR050800,,ADP-ribosyltransferase diphtheria toxin-like
+exotoxin_a,ExoA mART fold,IPR015099,,Exotoxin A catalytic domain
+t6ss_art_trna,ART fold,,,

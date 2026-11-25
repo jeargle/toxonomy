@@ -1,0 +1,10 @@
+entity_id,taxon_name,mechanism,note,ref_id
+prrc,Escherichia phage T4,repair,Pnk and RNA ligase religate the cleaved tRNA-Lys,amitsur1987
+prrc,bacteriophages (general),evasion_of_recognition,Phage-encoded tRNAs carry anticodon-loop mutations avoiding host nucleases,vandenberg2023
+rloc,bacteriophages (general),evasion_of_recognition,,vandenberg2023
+pat_toxin,Saccharomyces cerevisiae,repair,Trl1 healing is defeated by dinucleotide excision,meineke2012pat
+colicin_e3,Escherichia coli,repair,RtcB2 religates cleaved 16S rRNA; PrfH clears peptidyl-tRNA,maviza2026
+ribotoxin_fungal,Pseudomonas aeruginosa,repair,Band7 vault homolog plus noncoding bRNA in an RNA repair operon,bullen2026
+rip_plant_t2,mammals,surveillance_response,Ribotoxic stress response via JNK1,iordanov1997
+erythromycin,clinical staphylococci and enterococci,target_modification,Erm/Cfr rRNA methylation acquired from producer-type determinants,long2006
+kirromycin,Escherichia coli,target_site_substitution,tuf mutations conferring kirromycin resistance,cappellano1997

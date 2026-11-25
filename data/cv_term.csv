@@ -1,0 +1,65 @@
+term_id,facet,term,definition,external_id,external_source
+cn.protein,chemical_nature,protein,"Proteinaceous toxin, ribosomally synthesised and not extensively modified.",,local
+cn.ripp,chemical_nature,RiPP,Ribosomally synthesised and post-translationally modified peptide.,,local
+cn.nrp,chemical_nature,non-ribosomal peptide,Peptide assembled by non-ribosomal peptide synthetase.,,local
+cn.polyketide,chemical_nature,polyketide,Polyketide synthase product.,CHEBI:26188,ChEBI
+cn.terpenoid,chemical_nature,terpenoid,Isoprenoid-derived small molecule.,CHEBI:26873,ChEBI
+cn.alkaloid,chemical_nature,alkaloid,Nitrogenous small molecule of the alkaloid class.,CHEBI:22315,ChEBI
+cn.aminoglycoside,chemical_nature,aminoglycoside,Aminocyclitol-aminosugar antibiotic.,,local
+cn.nucleic_acid,chemical_nature,nucleic acid,"RNA or DNA effector (retrons, Argonaute guides, noncoding defence RNAs).",,local
+mt.srl,molecular_target,sarcin/ricin loop,"Universally conserved loop of large-subunit rRNA (A2660 in E. coli 23S, A4324 in rat 28S).",,local
+mt.decoding,molecular_target,decoding centre (16S/18S),Small-subunit rRNA decoding site.,,local
+mt.h69,molecular_target,helix 69,Central intersubunit bridge of the large subunit.,,local
+mt.trna_anticodon,molecular_target,tRNA anticodon loop,Anticodon arm of transfer RNA.,,local
+mt.trna_acceptor,molecular_target,tRNA acceptor stem,Acceptor stem of transfer RNA.,,local
+mt.eef2,molecular_target,eEF2 diphthamide,Diphthamide residue of eukaryotic elongation factor 2.,,local
+mt.eftu,molecular_target,EF-Tu,Bacterial elongation factor Tu.,,local
+mt.ptc,molecular_target,peptidyl transferase centre,Catalytic centre of the large subunit.,,local
+mt.50s,molecular_target,50S subunit (other site),Large ribosomal subunit outside PTC and SRL.,,local
+mt.30s,molecular_target,30S subunit (other site),Small ribosomal subunit outside the decoding centre.,,local
+mt.mrna,molecular_target,mRNA,"Messenger RNA, ribosome-dependent or independent cleavage.",,local
+ma.nglyc,mode_of_action,rRNA N-glycosylase,Depurination of a specific adenine; catalytic.,GO:0030598,GO
+ma.rnase,mode_of_action,endoribonuclease,Phosphodiester cleavage of RNA; catalytic.,GO:0004540,GO
+ma.trnase,mode_of_action,tRNA-specific ribonuclease,Site-specific cleavage of tRNA; catalytic.,GO:0004549,GO
+ma.mart,mode_of_action,mono-ADP-ribosyltransferase,Covalent NAD+-dependent modification of a protein target.,GO:0047286,GO
+ma.pyrophos,mode_of_action,tRNA pyrophosphokinase,Pyrophosphorylation of the tRNA 3' CCA end.,,local
+ma.stoich,mode_of_action,stoichiometric binding,Non-catalytic occupancy of a binding site; most small-molecule antibiotics.,,local
+ma.pore,mode_of_action,pore formation,Membrane permeabilisation.,GO:0035915,GO
+ma.cofactor_hijack,mode_of_action,host-factor-assisted,Requires a conserved host translation factor as cofactor or chaperone for activity.,,local
+ma.abi,mode_of_action,abortive infection,Producer-cell growth arrest or death that aborts phage propagation.,,local
+dl.diffusible,delivery,diffusible,Released into the medium.,,local
+dl.t6ss,delivery,type VI secretion,Contact-dependent injection by T6SS.,,local
+dl.cdi,delivery,contact-dependent inhibition,CdiB/CdiA two-partner secretion.,,local
+dl.import,delivery,receptor-mediated import,Binds a surface receptor and translocates into the target cell.,,local
+dl.intracellular,delivery,intracellular (self),Acts inside the producing cell; toxin-antitoxin and abortive-infection modules.,,local
+dl.tissue,delivery,constitutive in tissue,Accumulated in a tissue and encountered by ingestion or contact.,,local
+dl.symbiont,delivery,symbiont-borne,Produced by a symbiont inside a host and acting on the host's enemies.,,local
+sp.immunity,self_protection,immunity protein,Cognate protein that binds and neutralises the toxin.,,local
+sp.target_mod,self_protection,target modification,Chemical modification of the producer's own target (e.g. rRNA methylation).,,local
+sp.target_repl,self_protection,target replacement,Intrinsically resistant variant of the target protein or RNA.,,local
+sp.drug_mod,self_protection,drug modification,"Acetylation, phosphorylation or adenylylation of the producer's own product.",,local
+sp.ribo_prot,self_protection,ribosomal protection,ABCF-type ATPase that displaces the drug from the ribosome.,,local
+sp.repair,self_protection,repair,"Damage is reversed rather than prevented (RNA ligase, tRNA repair).",,local
+sp.compartment,self_protection,compartmentalisation,Physical or temporal separation of toxin from target.,,local
+sp.latency,self_protection,latency / complex sequestration,Toxin held inactive by association with another protein complex until triggered.,,local
+sp.none,self_protection,none required,Target absent from the producer.,,local
+ar.competitor,antagonist_relation,competitor,Same-guild organism competing for resources.,,local
+ar.phage,antagonist_relation,phage,Bacteriophage or archaeal virus.,,local
+ar.predator,antagonist_relation,predator,Organism that consumes the producer.,,local
+ar.parasite,antagonist_relation,parasite / parasitoid,Organism that parasitises the producer or its host.,,local
+ar.host,antagonist_relation,host,Organism the producer infects or colonises.,,local
+ar.herbivore,antagonist_relation,herbivore,Organism that eats the producing tissue.,,local
+ar.nonspecific,antagonist_relation,non-specific,No identified antagonist; broad-spectrum.,,local
+mb.core,mobility_context,chromosomal core,Vertically maintained chromosomal locus.,,local
+mb.island,mobility_context,defence island,Clustered with other defence systems.,,local
+mb.plasmid,mobility_context,plasmid,,,local
+mb.prophage,mobility_context,prophage,Encoded on an integrated phage genome.,,local
+mb.ice,mobility_context,ICE / genomic island,,,local
+mb.vle,mobility_context,virus-like element,Cytosolic linear DNA killer plasmid of yeasts.,,local
+mb.bgc,mobility_context,biosynthetic gene cluster,Contiguous cluster encoding a specialized metabolite.,,local
+mb.unknown,mobility_context,unknown,,,local
+dp.vertical,distribution_pattern,vertical,Congruent with the species tree.,,local
+dp.patchy,distribution_pattern,patchy / HGT signature,Sporadic distribution inconsistent with vertical inheritance.,,local
+dp.restricted,distribution_pattern,lineage-restricted,Confined to one clade; apparent innovation.,,local
+dp.pandomain,distribution_pattern,pan-domain,Present across two or three domains of life.,,local
+dp.unknown,distribution_pattern,unknown,,,local

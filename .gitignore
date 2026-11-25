@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Derived database (rebuild: python scripts/build_db.py toxonomy.db)
+toxonomy.db
+*.db-wal
+*.db-shm
+
+# macOS
+.DS_Store

@@ -1,0 +1,37 @@
+entity_id,taxon_name,ncbi_taxid,domain,lineage_note,provenance,ref_id
+rip_plant_t2,Ricinus communis,3988,Eukaryota,"Euphorbiaceae, eudicot",de_novo,
+rip_plant_t1,Phytolacca americana,3527,Eukaryota,"Phytolaccaceae, eudicot",de_novo,
+rip_plant_t1,Mirabilis jalapa,3538,Eukaryota,"Nyctaginaceae, eudicot",de_novo,nishida2025
+stx,Escherichia coli,562,Bacteria,Enterobacteriaceae; stx on lambdoid prophage,de_novo,elramly2026
+stx,Shigella dysenteriae,622,Bacteria,Enterobacteriaceae,de_novo,elramly2026
+rip_spiroplasma,Spiroplasma poulsonii,2138,Bacteria,Mollicutes; Drosophila endosymbiont,de_novo,ballinger2017
+rip_mosquito,Aedes aegypti,7159,Eukaryota,Culicinae; genes of bacterial origin,horizontally_acquired,lapadula2026
+rip_mosquito,Wolbachia,953,Bacteria,Alphaproteobacteria; proposed donor lineage (genus-level record),de_novo,lapadula2026
+rip_whitefly,Bemisia tabaci,7038,Eukaryota,Aleyrodidae; genes of plant origin,horizontally_acquired,lapadula2020wf
+ribotoxin_fungal,Aspergillus giganteus,5060,Eukaryota,Eurotiomycetes,de_novo,lacadena2007
+ribotoxin_fungal,Aspergillus fumigatus,746128,Eukaryota,Eurotiomycetes; restrictocin/mitogillin,de_novo,lacadena2007
+ageritin,Cyclocybe aegerita,1973307,Eukaryota,Agaricomycetes; published as Agrocybe aegerita,de_novo,tayyrov2019
+hirsutellin,Culicinomyces clavisporus,3043269,Eukaryota,Sordariomycetes; entomopathogen,de_novo,foresman2023
+colicin_e3,Escherichia coli,562,Bacteria,ColE3 plasmid,de_novo,meyhack1973
+colicin_e5,Escherichia coli,562,Bacteria,ColE5 plasmid,de_novo,ogawa1999
+colicin_d,Escherichia coli,562,Bacteria,ColD plasmid,de_novo,masaki2002
+cdia_ct_trnase,Klebsiella pneumoniae,573,Bacteria,Enterobacteriaceae; CdiA-CT Kp342,de_novo,gucinski2019
+cdia_ct_trnase,Escherichia coli,562,Bacteria,CdiA-CT EC3006,de_novo,gucinski2019
+srlase1,Pseudomonas aeruginosa,287,Bacteria,Gammaproteobacteria; homologs across phyla,de_novo,hespanhol2026
+ribocin,Pseudomonas aeruginosa,287,Bacteria,Gammaproteobacteria,de_novo,vasquezrifo2026
+vapc20,Mycobacterium tuberculosis,1773,Bacteria,Actinomycetota,de_novo,winther2013
+prrc,Escherichia coli,562,Bacteria,optional prr locus,de_novo,levitz1990
+rloc,Acinetobacter baylyi,202950,Bacteria,Moraxellaceae,de_novo,klaiman2014
+gamma_toxin,Kluyveromyces lactis,28985,Eukaryota,Saccharomycotina; VLE-encoded,de_novo,lu2005
+pat_toxin,Millerozyma acaciae,28986,Eukaryota,Saccharomycotina; published as Pichia acaciae; VLE-encoded,de_novo,meineke2012pat
+gamma_toxin,Fusarium oxysporum,5507,Eukaryota,Pezizomycotina; nuclear gene cluster,de_novo,heneghan2025
+diphtheria_toxin,Corynebacterium diphtheriae,1717,Bacteria,Actinomycetota; corynephage-borne,de_novo,mansfield2018
+diphtheria_toxin,Austwickia chelonae,100225,Bacteria,Actinomycetota; DT-like sister lineage,de_novo,mansfield2018
+exotoxin_a,Pseudomonas aeruginosa,287,Bacteria,Gammaproteobacteria,de_novo,jorgensen2005
+saip,Streptomyces,1883,Bacteria,Actinomycetota; monophyletic lineage >100 Myr (genus-level record),de_novo,xu2026
+t6ss_art_trna,Enterobacteriaceae,543,Bacteria,T6SS Rhs effector,de_novo,chabalier2026
+thiostrepton,Streptomyces azureus,146537,Bacteria,Actinomycetota,de_novo,cundliffe1978
+erythromycin,Saccharopolyspora erythraea,1836,Bacteria,Actinomycetota,de_novo,dhillon1990
+kirromycin,Streptomyces cinnamoneus,53446,Bacteria,Actinomycetota; kirrothricin producer,de_novo,cappellano1997
+kirromycin,Streptomyces ramocissimus,1925,Bacteria,Actinomycetota,de_novo,olsthoorn2007
+odilorhabdin,Xenorhabdus nematophila,628,Bacteria,Morganellaceae; nematode symbiont,de_novo,lanois2022

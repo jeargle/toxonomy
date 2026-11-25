@@ -1,0 +1,16 @@
+entity_id,immunity_name,immunity_fold,mechanism,ref_id
+colicin_e3,Im3,Im3 immunity fold,immunity_protein,carr2000
+colicin_e5,ImmE5,,immunity_protein,masaki2002
+colicin_d,ImmD,colicin D immunity domain,immunity_protein,masaki2002
+cdia_ct_trnase,CdiI(Kp342),beta-sandwich dimer,immunity_protein,gucinski2019
+cdia_ct_trnase,CdiI(EC3006),alpha-solenoid monomer,immunity_protein,gucinski2019
+srlase1,,,immunity_protein,hespanhol2026
+vapc20,VapB20,,immunity_protein,winther2013
+prrc,type IC R-M complex,,unknown,levitz1990
+gamma_toxin,cognate immunity factor,,immunity_protein,heneghan2025
+thiostrepton,Tsr 23S rRNA methyltransferase,,target_modification,cundliffe1978
+erythromycin,ErmE 23S rRNA methyltransferase,,target_modification,dhillon1990
+kirromycin,kirromycin-resistant EF-Tu,,target_replacement,cappellano1997
+odilorhabdin,OatA N-acetyltransferase,,drug_modification,lanois2022
+colicin_e3,RtcB2-PrfH,,repair,maviza2026
+ribotoxin_fungal,Band7 / bRNA (in target bacteria),,repair,bullen2026
