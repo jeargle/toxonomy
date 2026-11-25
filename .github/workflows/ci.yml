@@ -11,19 +11,18 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v7
+      - uses: astral-sh/setup-uv@v10.4.0
         with:
-          python-version: '3.11'
-          cache: pip
+          enable-cache: true
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: uv sync --locked
 
       - name: Build the database
-        run: python scripts/build_db.py toxonomy.db
+        run: uv run python scripts/build_db.py toxonomy.db
 
       - name: Check catalog integrity
-        run: python scripts/check.py
+        run: uv run python scripts/check.py
 
       - name: Score distributions against the backbone
-        run: python scripts/reconcile.py
+        run: uv run python scripts/reconcile.py

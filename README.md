@@ -20,6 +20,7 @@ counter-adaptations, 64 vocabulary terms, 36 references.
 
 ## Layout
 
+    pyproject.toml         dependencies (uv); uv.lock pins them
     schema/schema.sql      DDL (SQLite; portable to Postgres)
     docs/facets.md         the eight facets, and the axes deliberately excluded
     docs/backbone.md       the species-tree backbone and why it is two trees
@@ -28,14 +29,24 @@ counter-adaptations, 64 vocabulary terms, 36 references.
     scripts/build_db.py    rebuild toxonomy.db from schema + data
     scripts/build_tree.py  refetch taxonomy and rebuild the backbone
     scripts/reconcile.py   score each entity's distribution against the backbone
+    scripts/check.py       integrity checks beyond what the foreign keys catch
     scripts/queries.sql    the queries the scheme exists to answer
 
 ## Build
 
-    python scripts/build_db.py toxonomy.db
+Dependencies are managed with [uv](https://docs.astral.sh/uv/):
 
-Rebuilds from scratch each time; the CSVs are the source of truth and the database is
-derived, so it never needs migrating during schema development.
+    uv sync
+    uv run python scripts/build_db.py toxonomy.db   # schema + data -> toxonomy.db
+    uv run python scripts/check.py                  # catalog integrity
+    uv run python scripts/reconcile.py              # distribution scores
+
+`build_db.py` rebuilds from scratch each time; the CSVs are the source of truth and the
+database is derived, so it never needs migrating during schema development.
+
+`scripts/build_tree.py` refetches the backbone from NCBI, Open Tree and GTDB. Run it by
+hand when the taxon set changes and commit the regenerated `taxon.csv` and `tree_*.nwk`;
+it is deliberately kept out of CI so pushes do not hit those services.
 
 ## What the seed data already shows
 
@@ -89,4 +100,5 @@ test of whether these facets generalize beyond translation.
   under the two-domain tree eukaryotes nest within Archaea.
 - Source databases that use "prokaryotic" in field names keep the original string in a
   `source_term` column at ingestion, so the mapping back to the literature stays auditable.
-- Literature backing this catalog lives in `~/Downloads/Lit/ribosome-toxins/`.
+- Every catalog row is anchored to a published source: `data/reference.csv` carries the
+  citation, DOI and PMID for each `ref_id`, and the other tables cite it by key.

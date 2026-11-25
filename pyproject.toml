@@ -1,0 +1,15 @@
+[project]
+name = "toxonomy"
+version = "0.1.0"
+description = "A clade-neutral catalog of biological molecules that attack other biological systems"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # scripts/build_tree.py: NCBI E-utilities, Open Tree of Life, GTDB
+    "requests>=2.32",
+    # scripts/build_tree.py, scripts/reconcile.py: Newick parsing (Bio.Phylo)
+    "biopython>=1.84",
+]
+
+[tool.uv]
+package = false

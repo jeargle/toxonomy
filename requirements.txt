@@ -1,4 +1,0 @@
-# scripts/build_tree.py: NCBI E-utilities, Open Tree of Life, GTDB
-requests>=2.34
-# scripts/build_tree.py, scripts/reconcile.py: Newick parsing (Bio.Phylo)
-biopython>=1.88
