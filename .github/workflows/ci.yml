@@ -1,0 +1,29 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build the database
+        run: python scripts/build_db.py toxonomy.db
+
+      - name: Check catalog integrity
+        run: python scripts/check.py
+
+      - name: Score distributions against the backbone
+        run: python scripts/reconcile.py
