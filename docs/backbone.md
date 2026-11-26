@@ -53,7 +53,7 @@ synthesis is thinnest, which is worth knowing before the catalog takes on more o
 
 Not every producer record is a species. SAIP is recorded at the genus *Streptomyces*
 and a T6SS effector at the family Enterobacteriaceae, because that is the resolution
-the papers support. In `tree_bacteria.nwk` those are labelled internal nodes, so
+the papers support. In `tree_bacteria_archaea.nwk` those are labelled internal nodes, so
 `reconcile.py` addresses tips and internal nodes alike and a genus-level record
 correctly subsumes the species-level records beneath it.
 
