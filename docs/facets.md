@@ -7,10 +7,10 @@ marks a term minted here because no public one covers it.
 
 | Facet | Question it answers | Example values |
 |---|---|---|
-| `chemical_nature` | What kind of molecule is it? | protein, RiPP, non-ribosomal peptide, polyketide, terpenoid, alkaloid, nucleic acid |
-| `molecular_target` | What does it attack? | sarcin/ricin loop, decoding centre, helix 69, tRNA anticodon loop, eEF2 diphthamide, EF-Tu |
-| `mode_of_action` | How does it act? | rRNA N-glycosylase, endoribonuclease, mono-ADP-ribosyltransferase, stoichiometric binding, host-factor-assisted, abortive infection |
-| `delivery` | How does it reach the target? | diffusible, type VI secretion, contact-dependent inhibition, receptor-mediated import, intracellular, symbiont-borne |
+| `chemical_nature` | What kind of molecule is it? | protein, RiPP, non-ribosomal peptide, polyketide, terpenoid, alkaloid, aminoglycoside, steroid glycoside, disulfide-rich peptide, nucleic acid |
+| `molecular_target` | What does it attack? | sarcin/ricin loop, decoding centre, helix 69, tRNA anticodon loop, eEF2 diphthamide, EF-Tu, membrane bilayer, lipid II, penicillin-binding protein, beta-tubulin, voltage-gated sodium channel, Na+/K+-ATPase, double-stranded DNA, RNA polymerase II, NAD+ pool |
+| `mode_of_action` | How does it act? | rRNA N-glycosylase, endoribonuclease, mono-ADP-ribosyltransferase, stoichiometric binding, host-factor-assisted, abortive infection, pore formation, phospholipase, NAD+ glycohydrolase, ion channel block, covalent enzyme inactivation, microtubule stabilisation |
+| `delivery` | How does it reach the target? | diffusible, type VI secretion, contact-dependent inhibition, receptor-mediated import, intracellular, symbiont-borne, injected, constitutive in tissue |
 | `self_protection` | How does the producer survive it? | immunity protein, target modification, target replacement, drug modification, ribosomal protection, repair, latency, none required |
 | `antagonist_relation` | Who is it aimed at? | competitor, phage, predator, parasite, host, herbivore, non-specific |
 | `mobility_context` | Where is it encoded? | chromosomal core, defence island, plasmid, prophage, ICE, virus-like element, biosynthetic gene cluster |

@@ -8,3 +8,11 @@ ribotoxin_fungal,Pseudomonas aeruginosa,repair,Band7 vault homolog plus noncodin
 rip_plant_t2,mammals,surveillance_response,Ribotoxic stress response via JNK1,iordanov1997
 erythromycin,clinical staphylococci and enterococci,target_modification,Erm/Cfr rRNA methylation acquired from producer-type determinants,long2006
 kirromycin,Escherichia coli,target_site_substitution,tuf mutations conferring kirromycin resistance,cappellano1997
+tetrodotoxin,Thamnophis sirtalis,target_site_substitution,Convergent Nav substitutions in TTX-resistant garter snakes,feldman2012
+bufadienolide,Thamnophis elegans,target_site_substitution,Mutant Na+/K+-ATPase expressed in cardiac muscle,mohammadi2017
+cardenolide,herbivorous insects,target_site_substitution,"Community-wide convergent Na,K-ATPase substitutions",dobler2012
+cardenolide,predators and parasites of milkweed herbivores,target_site_substitution,Resistance convergent at a third trophic level,groen2021
+nisin,Streptococcus agalactiae,binding_protein,"NSR resistance protein, distinct from producer immunity",khosa2016
+vancomycin,Enterococcus,target_modification,vanHAX clusters mobilised from soil and producer organisms,hasman2006
+batrachotoxin,Dendrobatidae,binding_protein,Plasma globulin binds and sequesters dietary alkaloids,alvarezbuylla2023
+saxitoxin,dinoflagellates,target_site_substitution,sxt acquisition and loss across lineages,orr2013

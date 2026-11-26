@@ -23,3 +23,18 @@ diphtheria_toxin,DT-like mART fold,IPR000512,,
 saip,DT-like mART fold,IPR050800,,ADP-ribosyltransferase diphtheria toxin-like
 exotoxin_a,ExoA mART fold,IPR015099,,Exotoxin A catalytic domain
 t6ss_art_trna,ART fold,,,
+alpha_hemolysin,beta-PFT (alpha-hemolysin fold),,,
+aerolysin_alp,aerolysin-like beta-PFT,,,"fold spans bacteria, fungi, plants and animals"
+biomphalysin,aerolysin-like beta-PFT,,,snail member of the aerolysin family
+cdc_cytolysin,MACPF/CDC,,,
+macpf_mpeg1,MACPF/CDC,,,same superfamily as the bacterial CDCs
+gasdermin_bact,gasdermin,,,homologous to animal pyroptosis gasdermins
+pla2_venom,secreted phospholipase A2,,,recruited from a digestive sPLA2 ancestor
+plc_alpha_toxin,zinc metallophospholipase C,,,
+conotoxin,conotoxin cysteine frameworks,,,
+colicin_e2,HNH/His-Me finger endonuclease,,,
+pago_short,PIWI (Argonaute),,,
+thoeris,TIR + SIR2,,,
+sarm1,TIR,,,same NADase chemistry as bacterial TIR defense
+halocin,halocin,,,no public fold assignment
+sulfolobicin,sulfolobicin,,,no public fold assignment

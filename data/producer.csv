@@ -35,3 +35,33 @@ erythromycin,Saccharopolyspora erythraea,1836,Bacteria,Actinomycetota,de_novo,dh
 kirromycin,Streptomyces cinnamoneus,53446,Bacteria,Actinomycetota; kirrothricin producer,de_novo,cappellano1997
 kirromycin,Streptomyces ramocissimus,1925,Bacteria,Actinomycetota,de_novo,olsthoorn2007
 odilorhabdin,Xenorhabdus nematophila,628,Bacteria,Morganellaceae; nematode symbiont,de_novo,lanois2022
+alpha_hemolysin,Staphylococcus aureus,1280,Bacteria,Bacillota,de_novo,song1996
+aerolysin_alp,Armillaria ostoyae,47428,Eukaryota,Agaricomycetes,de_novo,languar2026
+biomphalysin,Biomphalaria glabrata,6526,Eukaryota,Gastropoda,de_novo,galinier2013
+cdc_cytolysin,Listeria monocytogenes,1639,Bacteria,Bacillota; listeriolysin O,de_novo,anderluh2014
+cdc_cytolysin,Streptococcus pneumoniae,1313,Bacteria,Bacillota; pneumolysin,de_novo,gilbert2014
+macpf_mpeg1,Homo sapiens,9606,Eukaryota,Mammalia,de_novo,mccormack2015
+gasdermin_bact,Bacteria,2,Bacteria,domain-level record; species not fixed here,de_novo,wein2025
+pla2_venom,Protobothrops flavoviridis,88087,Eukaryota,Viperidae,de_novo,jeyaseelan2000
+plc_alpha_toxin,Clostridium perfringens,1502,Bacteria,Bacillota,de_novo,oda2015
+tetrodotoxin,Pseudomonas,286,Bacteria,Gammaproteobacteria; newt skin symbiont,de_novo,vaelli2020
+tetrodotoxin,Taricha granulosa,8321,Eukaryota,Amphibia; symbiont-derived,symbiont_derived,vaelli2020
+tetrodotoxin,Takifugu rubripes,31033,Eukaryota,Actinopteri; dietary accumulation,sequestered,chau2011
+saxitoxin,Alexandrium,2924,Eukaryota,Dinophyceae,de_novo,orr2013
+saxitoxin,Heteroscytonema crispum,439476,Bacteria,Cyanobacteriota,de_novo,stern2025
+bufadienolide,Rhinella marina,8386,Eukaryota,Amphibia; parotoid gland,de_novo,asrorov2023
+cardenolide,Asclepias syriaca,48545,Eukaryota,Apocynaceae,de_novo,dobler2012
+conotoxin,Conus,6490,Eukaryota,Gastropoda,de_novo,phuong2016
+batrachotoxin,Dendrobatidae,43469,Eukaryota,Amphibia; dietary arthropod source,sequestered,alvarezbuylla2023
+paclitaxel,Taxus,25628,Eukaryota,Pinopsida,de_novo,jiang2024
+alpha_amanitin,Amanita phalloides,67723,Eukaryota,Agaricomycetes,de_novo,johnson1980
+vancomycin,Amycolatopsis orientalis,31958,Bacteria,Actinomycetota,de_novo,marshall1998
+penicillin,Penicillium chrysogenum,5076,Eukaryota,Eurotiomycetes,de_novo,brakhage2005
+nisin,Lactococcus lactis,1358,Bacteria,Bacillota,de_novo,khosa2016
+colicin_e2,Escherichia coli,562,Bacteria,ColE2 plasmid,de_novo,keeble2006
+pago_short,Bacteria,2,Bacteria,domain-level record; pAgos also occur in Archaea,de_novo,gao2024
+thoeris,Bacillus,1386,Bacteria,Bacillota,de_novo,ofir2021
+sarm1,Homo sapiens,9606,Eukaryota,Mammalia,de_novo,diantonio2021
+halocin,Haloferax mediterranei,2252,Archaea,Halobacteria,de_novo,kumar2021
+sulfolobicin,Sulfolobus acidocaldarius,2285,Archaea,Thermoproteota,de_novo,ellen2011
+aminoglycoside,Streptoalloteichus tenebrarius,1933,Bacteria,Actinomycetota; KamB producer,de_novo,viducic2025

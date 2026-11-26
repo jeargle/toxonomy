@@ -1,37 +1,75 @@
 ref_id,citation,title,year,journal,doi,pmid,is_preprint
-nishida2025,Nishida et al. 2025,Structure of Ribosome-Inactivating Protein from Mirabilis jalapa and Its L12-Stalk-Dependent Inhibition of Escherichia coli Ribosome.,2025,Toxins (Basel),10.3390/toxins17120575,41441611,0
-elramly2026,El-Ramly et al. 2026,Ribosome-inactivating proteins in bacteria.,2026,Microb Genom,10.1099/mgen.0.001839,42766344,0
-ballinger2017,Ballinger et al. 2017,Generality of toxins in defensive symbiosis: Ribosome-inactivating proteins and defense against parasitic wasps in Drosophila.,2017,PLoS Pathog,10.1371/journal.ppat.1006431,28683136,0
-lapadula2026,Lapadula et al. 2026,Ancestral Wolbachia lineages are likely donors of ribotoxin genes in Aedes aegypti.,2026,J Evol Biol,10.1093/jeb/voag014,41762158,0
-lapadula2020wf,Lapadula et al. 2020,Whitefly genomes contain ribotoxin coding genes acquired from plants.,2020,Sci Rep,10.1038/s41598-020-72267-1,32968092,0
-lacadena2007,Lacadena et al. 2007,Fungal ribotoxins: molecular dissection of a family of natural killers.,2007,FEMS Microbiol Rev,10.1111/j.1574-6976.2006.00063.x,17253975,0
-tayyrov2019,Tayyrov et al. 2019,"Heterologous Production and Functional Characterization of Ageritin, a Novel Type of Ribotoxin Highly Expressed during Fruiting of the Edible Mushroom Agrocybe aegerita.",2019,Appl Environ Microbiol,10.1128/AEM.01549-19,31444206,0
-foresman2023,Foresman et al. 2023,The transcriptome of the entomopathogenic fungus Culicinomyces clavisporus contains an ortholog of the insecticidal ribotoxin Hirsutellin.,2023,PeerJ,10.7717/peerj.16259,37868071,0
-meyhack1973,Meyhack et al. 1973,Colicin E3: a unique endoribonuclease.,1973,Proc Natl Acad Sci U S A,10.1073/pnas.70.1.156,4567332,0
-ogawa1999,Ogawa et al. 1999,A cytotoxic ribonuclease targeting specific transfer RNA anticodons.,1999,Science,10.1126/science.283.5410.2097,10092236,0
-masaki2002,Masaki et al. 2002,"The modes of action of colicins E5 and D, and related cytotoxic tRNases.",2002,Biochimie,10.1016/s0300-9084(02)01425-6,12423786,0
-gucinski2019,Gucinski et al. 2019,Convergent Evolution of the Barnase/EndoU/Colicin/RelE (BECR) Fold in Antibacterial tRNase Toxins.,2019,Structure,10.1016/j.str.2019.08.010,31515004,0
-hespanhol2026,Hespanhol et al. 2026,An RNase Toxin Hijacks Elongation Factor-Tu to Cleave the Ribosomal Sarcin-Ricin Loop.,2026,bioRxiv,10.64898/2026.09.18.752725,42780046,1
-vasquezrifo2026,Vasquez-Rifo et al. 2026,The Pseudomonas aeruginosa ribonuclease Ribocin cleaves eukaryotic ribosomes at helix 69 to inhibit host translation.,2026,PLoS Biol,10.1371/journal.pbio.3003790,42160310,0
-winther2013,Winther et al. 2013,VapC20 of Mycobacterium tuberculosis cleaves the sarcin-ricin loop of 23S rRNA.,2013,Nat Commun,10.1038/ncomms3796,24225902,0
-levitz1990,Levitz et al. 1990,The optional E. coli prr locus encodes a latent form of phage T4-induced anticodon nuclease.,1990,EMBO J,10.1002/j.1460-2075.1990.tb08253.x,1691706,0
-klaiman2014,Klaiman et al. 2014,A DNA break inducer activates the anticodon nuclease RloC and the adaptive immunity in Acinetobacter baylyi ADP1.,2014,Nucleic Acids Res,10.1093/nar/gkt851,24062157,0
-lu2005,Lu et al. 2005,The Kluyveromyces lactis gamma-toxin targets tRNA anticodons.,2005,RNA,10.1261/rna.2172105,16244131,0
-meineke2012pat,Meineke et al. 2012,A fungal anticodon nuclease ribotoxin exploits a secondary cleavage site to evade tRNA repair.,2012,RNA,10.1261/rna.034132.112,22836353,0
-heneghan2025,Heneghan et al. 2025,Zymocin-like killer toxin gene clusters in the nuclear genomes of filamentous fungi.,2025,Fungal Genet Biol,10.1016/j.fgb.2024.103957,39756571,0
-mansfield2018,Mansfield et al. 2018,Identification of a diphtheria toxin-like gene family beyond the Corynebacterium genus.,2018,FEBS Lett,10.1002/1873-3468.13208,30058084,0
-jorgensen2005,Jørgensen et al. 2005,Exotoxin A-eEF2 complex structure indicates ADP ribosylation by ribosome mimicry.,2005,Nature,10.1038/nature03871,16107839,0
-xu2026,Xu et al. 2026,Streptomyces produce a diphtheria toxin-like exotoxin that targets insects.,2026,Nat Microbiol,10.1038/s41564-026-02315-5,42062574,0
-chabalier2026,Chabalier et al. 2026,A type VI secretion ADP-ribosyltransferase Rhs toxin selectively modifies charged tRNAThr(GGU) anticodon loops to block ACC codon decoding.,2026,Nucleic Acids Res,10.1093/nar/gkag922,42803188,0
-cundliffe1978,Cundliffe 1978,Mechanism of resistance to thiostrepton in the producing-organism Streptomyces azureus.,1978,Nature,10.1038/272792a0,643068,0
-dhillon1990,Dhillon et al. 1990,A repeated decapeptide motif in the C-terminal domain of the ribosomal RNA methyltransferase from the erythromycin producer Saccharopolyspora erythraea.,1990,FEBS Lett,10.1016/0014-5793(90)80186-m,2335200,0
-cappellano1997,Cappellano et al. 1997,Natural kirromycin resistance of elongation factor Tu from the kirrothricin producer Streptomyces cinnamoneus.,1997,Microbiology (Reading),10.1099/00221287-143-2-617,9043138,0
-olsthoorn2007,Olsthoorn-Tieleman et al. 2007,Elongation factor Tu3 (EF-Tu3) from the kirromycin producer Streptomyces ramocissimus Is resistant to three classes of EF-Tu-specific inhibitors.,2007,J Bacteriol,10.1128/JB.01810-06,17337575,0
-lanois2022,Lanois-Nouri et al. 2022,The Odilorhabdin Antibiotic Biosynthetic Cluster and Acetyltransferase Self-Resistance Locus Are Niche and Species Specific.,2022,mBio,10.1128/mbio.02826-21,35012352,0
-carr2000,Carr et al. 2000,Inhibition of a ribosome-inactivating ribonuclease: the crystal structure of the cytotoxic domain of colicin E3 in complex with its immunity protein.,2000,Structure,10.1016/s0969-2126(00)00186-6,10986462,0
-maviza2026,Maviza et al. 2026,PrfH accelerates repair of colicin E3 - damaged translating ribosomes by RtcB2.,2026,RNA Biol,10.1080/15476286.2026.2669700,42080441,0
+nishida2025,Nishida et al. 2025,Structure of Ribosome-Inactivating Protein from Mirabilis jalapa and Its L12-Stalk-Dependent Inhibition of Escherichia coli Ribosome.,2025,Toxins (Basel),10.3390/toxins17120575,41441611.0,0
+elramly2026,El-Ramly et al. 2026,Ribosome-inactivating proteins in bacteria.,2026,Microb Genom,10.1099/mgen.0.001839,42766344.0,0
+ballinger2017,Ballinger et al. 2017,Generality of toxins in defensive symbiosis: Ribosome-inactivating proteins and defense against parasitic wasps in Drosophila.,2017,PLoS Pathog,10.1371/journal.ppat.1006431,28683136.0,0
+lapadula2026,Lapadula et al. 2026,Ancestral Wolbachia lineages are likely donors of ribotoxin genes in Aedes aegypti.,2026,J Evol Biol,10.1093/jeb/voag014,41762158.0,0
+lapadula2020wf,Lapadula et al. 2020,Whitefly genomes contain ribotoxin coding genes acquired from plants.,2020,Sci Rep,10.1038/s41598-020-72267-1,32968092.0,0
+lacadena2007,Lacadena et al. 2007,Fungal ribotoxins: molecular dissection of a family of natural killers.,2007,FEMS Microbiol Rev,10.1111/j.1574-6976.2006.00063.x,17253975.0,0
+tayyrov2019,Tayyrov et al. 2019,"Heterologous Production and Functional Characterization of Ageritin, a Novel Type of Ribotoxin Highly Expressed during Fruiting of the Edible Mushroom Agrocybe aegerita.",2019,Appl Environ Microbiol,10.1128/AEM.01549-19,31444206.0,0
+foresman2023,Foresman et al. 2023,The transcriptome of the entomopathogenic fungus Culicinomyces clavisporus contains an ortholog of the insecticidal ribotoxin Hirsutellin.,2023,PeerJ,10.7717/peerj.16259,37868071.0,0
+meyhack1973,Meyhack et al. 1973,Colicin E3: a unique endoribonuclease.,1973,Proc Natl Acad Sci U S A,10.1073/pnas.70.1.156,4567332.0,0
+ogawa1999,Ogawa et al. 1999,A cytotoxic ribonuclease targeting specific transfer RNA anticodons.,1999,Science,10.1126/science.283.5410.2097,10092236.0,0
+masaki2002,Masaki et al. 2002,"The modes of action of colicins E5 and D, and related cytotoxic tRNases.",2002,Biochimie,10.1016/s0300-9084(02)01425-6,12423786.0,0
+gucinski2019,Gucinski et al. 2019,Convergent Evolution of the Barnase/EndoU/Colicin/RelE (BECR) Fold in Antibacterial tRNase Toxins.,2019,Structure,10.1016/j.str.2019.08.010,31515004.0,0
+hespanhol2026,Hespanhol et al. 2026,An RNase Toxin Hijacks Elongation Factor-Tu to Cleave the Ribosomal Sarcin-Ricin Loop.,2026,bioRxiv,10.64898/2026.09.18.752725,42780046.0,1
+vasquezrifo2026,Vasquez-Rifo et al. 2026,The Pseudomonas aeruginosa ribonuclease Ribocin cleaves eukaryotic ribosomes at helix 69 to inhibit host translation.,2026,PLoS Biol,10.1371/journal.pbio.3003790,42160310.0,0
+winther2013,Winther et al. 2013,VapC20 of Mycobacterium tuberculosis cleaves the sarcin-ricin loop of 23S rRNA.,2013,Nat Commun,10.1038/ncomms3796,24225902.0,0
+levitz1990,Levitz et al. 1990,The optional E. coli prr locus encodes a latent form of phage T4-induced anticodon nuclease.,1990,EMBO J,10.1002/j.1460-2075.1990.tb08253.x,1691706.0,0
+klaiman2014,Klaiman et al. 2014,A DNA break inducer activates the anticodon nuclease RloC and the adaptive immunity in Acinetobacter baylyi ADP1.,2014,Nucleic Acids Res,10.1093/nar/gkt851,24062157.0,0
+lu2005,Lu et al. 2005,The Kluyveromyces lactis gamma-toxin targets tRNA anticodons.,2005,RNA,10.1261/rna.2172105,16244131.0,0
+meineke2012pat,Meineke et al. 2012,A fungal anticodon nuclease ribotoxin exploits a secondary cleavage site to evade tRNA repair.,2012,RNA,10.1261/rna.034132.112,22836353.0,0
+heneghan2025,Heneghan et al. 2025,Zymocin-like killer toxin gene clusters in the nuclear genomes of filamentous fungi.,2025,Fungal Genet Biol,10.1016/j.fgb.2024.103957,39756571.0,0
+mansfield2018,Mansfield et al. 2018,Identification of a diphtheria toxin-like gene family beyond the Corynebacterium genus.,2018,FEBS Lett,10.1002/1873-3468.13208,30058084.0,0
+jorgensen2005,Jørgensen et al. 2005,Exotoxin A-eEF2 complex structure indicates ADP ribosylation by ribosome mimicry.,2005,Nature,10.1038/nature03871,16107839.0,0
+xu2026,Xu et al. 2026,Streptomyces produce a diphtheria toxin-like exotoxin that targets insects.,2026,Nat Microbiol,10.1038/s41564-026-02315-5,42062574.0,0
+chabalier2026,Chabalier et al. 2026,A type VI secretion ADP-ribosyltransferase Rhs toxin selectively modifies charged tRNAThr(GGU) anticodon loops to block ACC codon decoding.,2026,Nucleic Acids Res,10.1093/nar/gkag922,42803188.0,0
+cundliffe1978,Cundliffe 1978,Mechanism of resistance to thiostrepton in the producing-organism Streptomyces azureus.,1978,Nature,10.1038/272792a0,643068.0,0
+dhillon1990,Dhillon et al. 1990,A repeated decapeptide motif in the C-terminal domain of the ribosomal RNA methyltransferase from the erythromycin producer Saccharopolyspora erythraea.,1990,FEBS Lett,10.1016/0014-5793(90)80186-m,2335200.0,0
+cappellano1997,Cappellano et al. 1997,Natural kirromycin resistance of elongation factor Tu from the kirrothricin producer Streptomyces cinnamoneus.,1997,Microbiology (Reading),10.1099/00221287-143-2-617,9043138.0,0
+olsthoorn2007,Olsthoorn-Tieleman et al. 2007,Elongation factor Tu3 (EF-Tu3) from the kirromycin producer Streptomyces ramocissimus Is resistant to three classes of EF-Tu-specific inhibitors.,2007,J Bacteriol,10.1128/JB.01810-06,17337575.0,0
+lanois2022,Lanois-Nouri et al. 2022,The Odilorhabdin Antibiotic Biosynthetic Cluster and Acetyltransferase Self-Resistance Locus Are Niche and Species Specific.,2022,mBio,10.1128/mbio.02826-21,35012352.0,0
+carr2000,Carr et al. 2000,Inhibition of a ribosome-inactivating ribonuclease: the crystal structure of the cytotoxic domain of colicin E3 in complex with its immunity protein.,2000,Structure,10.1016/s0969-2126(00)00186-6,10986462.0,0
+maviza2026,Maviza et al. 2026,PrfH accelerates repair of colicin E3 - damaged translating ribosomes by RtcB2.,2026,RNA Biol,10.1080/15476286.2026.2669700,42080441.0,0
 bullen2026,Bullen et al. 2026,Homologs of the Major Vault Protein defend bacteria against ribotoxins,2026,bioRxiv,10.64898/2026.11.20.768214,,1
-amitsur1987,Amitsur et al. 1987,"Bacteriophage T4 anticodon nuclease, polynucleotide kinase and RNA ligase reprocess the host lysine tRNA.",1987,EMBO J,10.1002/j.1460-2075.1987.tb02532.x,2444436,0
-vandenberg2023,van den Berg et al. 2023,Phage tRNAs evade tRNA-targeting host defenses through anticodon loop mutations.,2023,Elife,10.7554/eLife.85183,37266569,0
-iordanov1997,Iordanov et al. 1997,Ribotoxic stress response: activation of the stress-activated protein kinase JNK1 by inhibitors of the peptidyl transferase reaction and by sequence-specific RNA damage to the alpha-sarcin/ricin loop in the 28S rRNA.,1997,Mol Cell Biol,10.1128/MCB.17.6.3373,9154836,0
-long2006,Long et al. 2006,"The Cfr rRNA methyltransferase confers resistance to Phenicols, Lincosamides, Oxazolidinones, Pleuromutilins, and Streptogramin A antibiotics.",2006,Antimicrob Agents Chemother,10.1128/AAC.00131-06,16801432,0
+amitsur1987,Amitsur et al. 1987,"Bacteriophage T4 anticodon nuclease, polynucleotide kinase and RNA ligase reprocess the host lysine tRNA.",1987,EMBO J,10.1002/j.1460-2075.1987.tb02532.x,2444436.0,0
+vandenberg2023,van den Berg et al. 2023,Phage tRNAs evade tRNA-targeting host defenses through anticodon loop mutations.,2023,Elife,10.7554/eLife.85183,37266569.0,0
+iordanov1997,Iordanov et al. 1997,Ribotoxic stress response: activation of the stress-activated protein kinase JNK1 by inhibitors of the peptidyl transferase reaction and by sequence-specific RNA damage to the alpha-sarcin/ricin loop in the 28S rRNA.,1997,Mol Cell Biol,10.1128/MCB.17.6.3373,9154836.0,0
+long2006,Long et al. 2006,"The Cfr rRNA methyltransferase confers resistance to Phenicols, Lincosamides, Oxazolidinones, Pleuromutilins, and Streptogramin A antibiotics.",2006,Antimicrob Agents Chemother,10.1128/AAC.00131-06,16801432.0,0
+song1996,Song et al. 1996,"Structure of staphylococcal alpha-hemolysin, a heptameric transmembrane pore.",1996,Science,10.1126/science.274.5294.1859,8943190.0,0
+languar2026,Languar et al. 2026,Aerolysin-like proteins from Armillaria ostoyae with potential roles in plant pathogenicity reveal a distant evolutionary relationship to toadfish natterins.,2026,Front Fungal Biol,10.3389/ffunb.2026.1894067,42553384.0,0
+galinier2013,Galinier et al. 2013,"Biomphalysin, a new β pore-forming toxin involved in Biomphalaria glabrata immune defense against Schistosoma mansoni.",2013,PLoS Pathog,10.1371/journal.ppat.1003216,23555242.0,0
+anderluh2014,Anderluh et al. 2014,Distribution of MACPF/CDC proteins.,2014,Subcell Biochem,10.1007/978-94-017-8881-6_2,24798005.0,0
+gilbert2014,Gilbert 2014,Structural features of cholesterol dependent cytolysins and comparison to other MACPF-domain containing proteins.,2014,Subcell Biochem,10.1007/978-94-017-8881-6_4,24798007.0,0
+mccormack2015,McCormack et al. 2015,Perforin-2/Mpeg1 and other pore-forming proteins throughout evolution.,2015,J Leukoc Biol,10.1189/jlb.4MR1114-523RR,26307549.0,0
+wein2025,Wein et al. 2025,CARD domains mediate anti-phage defence in bacterial gasdermin systems.,2025,Nature,10.1038/s41586-024-08498-3,39880956.0,0
+lynch2007,Lynch 2007,Inventing an arsenal: adaptive evolution and neofunctionalization of snake venom phospholipase A2 genes.,2007,BMC Evol Biol,10.1186/1471-2148-7-2,17233905.0,0
+jeyaseelan2000,Jeyaseelan et al. 2000,Structure and phylogeny of the venom group I phospholipase A(2) gene.,2000,Mol Biol Evol,10.1093/oxfordjournals.molbev.a026382,10889214.0,0
+oda2015,Oda et al. 2015,Membrane-Binding Mechanism of Clostridium perfringens Alpha-Toxin.,2015,Toxins (Basel),10.3390/toxins7124880,26633512.0,0
+titball1993,Titball 1993,Bacterial phospholipases C.,1993,Microbiol Rev,10.1128/mr.57.2.347-366.1993,8336671.0,0
+chau2011,Chau et al. 2011,On the origins and biosynthesis of tetrodotoxin.,2011,Aquat Toxicol,10.1016/j.aquatox.2011.04.001,21543051.0,0
+vaelli2020,Vaelli et al. 2020,The skin microbiome facilitates adaptive tetrodotoxin production in poisonous newts.,2020,Elife,10.7554/eLife.53898,32254021.0,0
+feldman2012,Feldman et al. 2012,Constraint shapes convergence in tetrodotoxin-resistant sodium channels of snakes.,2012,Proc Natl Acad Sci U S A,10.1073/pnas.1113468109,22392995.0,0
+orr2013,Orr et al. 2013,"Evolutionary acquisition and loss of saxitoxin biosynthesis in dinoflagellates: the second ""core"" gene, sxtG.",2013,Appl Environ Microbiol,10.1128/AEM.03279-12,23335767.0,0
+stern2025,Stern et al. 2025,Novel Toxin Biosynthetic Gene Cluster in Harmful Algal Bloom-Causing Heteroscytonema crispum: Insights into the Origins of Paralytic Shellfish Toxins.,2025,Genome Biol Evol,10.1093/gbe/evae248,39545400.0,0
+asrorov2023,Asrorov et al. 2023,Toad venom bufadienolides and bufotoxins: An updated review.,2023,Drug Dev Res,10.1002/ddr.22072,37154099.0,0
+mohammadi2017,Mohammadi et al. 2017,Toad toxin-resistant snake (Thamnophis elegans) expresses high levels of mutant Na^+^/K^+^-ATPase mRNA in cardiac muscle.,2017,Gene,10.1016/j.gene.2017.02.028,28249773.0,0
+dobler2012,Dobler et al. 2012,"Community-wide convergent evolution in insect adaptation to toxic cardenolides by substitutions in the Na,K-ATPase.",2012,Proc Natl Acad Sci U S A,10.1073/pnas.1202111109,22826239.0,0
+groen2021,Groen et al. 2021,Convergent evolution of cardiac-glycoside resistance in predators and parasites of milkweed herbivores.,2021,Curr Biol,10.1016/j.cub.2021.10.025,34813747.0,0
+phuong2016,Phuong et al. 2016,Dietary breadth is positively correlated with venom complexity in cone snails.,2016,BMC Genomics,10.1186/s12864-016-2755-6,27229931.0,0
+alvarezbuylla2023,Alvarez-Buylla et al. 2023,Binding and sequestration of poison frog alkaloids by a plasma globulin.,2023,Elife,10.7554/eLife.85096,38206862.0,0
+jiang2024,Jiang et al. 2024,Characterization and heterologous reconstitution of Taxus biosynthetic enzymes leading to baccatin III.,2024,Science,10.1126/science.adj3484,38271490.0,0
+fernie2024,Fernie et al. 2024,Post-genomic illumination of paclitaxel biosynthesis.,2024,Nat Plants,10.1038/s41477-024-01869-8,39604636.0,0
+johnson1980,Johnson et al. 1980,alpha-Amanitin-resistant RNA polymerase II from carpophores of Amanita species accumulating amatoxins.,1980,Biochim Biophys Acta,10.1016/0005-2787(80)90224-5,7189412.0,0
+marshall1998,Marshall et al. 1998,Glycopeptide antibiotic resistance genes in glycopeptide-producing organisms.,1998,Antimicrob Agents Chemother,10.1128/AAC.42.9.2215,9736537.0,0
+hasman2006,Hasman et al. 2006,Heterologous expression of glycopeptide resistance vanHAX gene clusters from soil bacteria in Enterococcus faecalis.,2006,J Antimicrob Chemother,10.1093/jac/dkl033,16476725.0,0
+brakhage2005,Brakhage et al. 2005,Evolution of beta-lactam biosynthesis genes and recruitment of trans-acting factors.,2005,Phytochemistry,10.1016/j.phytochem.2005.02.030,15950251.0,0
+khosa2016,Khosa et al. 2016,Protein Defense Systems against the Lantibiotic Nisin: Function of the Immunity Protein NisI and the Resistance Protein NSR.,2016,Front Microbiol,10.3389/fmicb.2016.00504,27148193.0,0
+keeble2006,Keeble et al. 2006,Calorimetric dissection of colicin DNase--immunity protein complex specificity.,2006,Biochemistry,10.1021/bi052373o,16519519.0,0
+lisitskaya2018,Lisitskaya et al. 2018,DNA interference and beyond: structure and functions of prokaryotic Argonaute proteins.,2018,Nat Commun,10.1038/s41467-018-07449-7,30514832.0,0
+gao2024,Gao et al. 2024,Nucleic-acid-triggered NADase activation of a short prokaryotic Argonaute.,2024,Nature,10.1038/s41586-023-06665-6,37783228.0,0
+ofir2021,Ofir et al. 2021,Antiviral activity of bacterial TIR domains via immune signalling molecules.,2021,Nature,10.1038/s41586-021-04098-7,34853457.0,0
+ka2020,Ka et al. 2020,Structural and functional evidence of bacterial antiphage protection by Thoeris defense system via NAD^+^ degradation.,2020,Nat Commun,10.1038/s41467-020-16703-w,32499527.0,0
+kumar2021,Kumar et al. 2021,"Halocins, natural antimicrobials of Archaea: Exotic or special or both?",2021,Biotechnol Adv,10.1016/j.biotechadv.2021.107834,34509601.0,0
+ellen2011,Ellen et al. 2011,The sulfolobicin genes of Sulfolobus acidocaldarius encode novel antimicrobial proteins.,2011,J Bacteriol,10.1128/JB.05028-11,21725003.0,0
+diantonio2021,DiAntonio et al. 2021,The SARM1 TIR NADase: Mechanistic Similarities to Bacterial Phage Defense and Toxin-Antitoxin Systems.,2021,Front Immunol,10.3389/fimmu.2021.752898,34630431.0,0
+viducic2025,Vidučić et al. 2025,Biological cost of aminoglycoside resistance Arm/Kam 16S rRNA methyltransferases from natural antibiotic producers and clinical pathogens.,2025,Antimicrob Agents Chemother,10.1128/aac.00742-25,40741957.0,0

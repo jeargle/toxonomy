@@ -14,3 +14,14 @@ kirromycin,kirromycin-resistant EF-Tu,,target_replacement,cappellano1997
 odilorhabdin,OatA N-acetyltransferase,,drug_modification,lanois2022
 colicin_e3,RtcB2-PrfH,,repair,maviza2026
 ribotoxin_fungal,Band7 / bRNA (in target bacteria),,repair,bullen2026
+nisin,NisI,,immunity_protein,khosa2016
+colicin_e2,Im2,,immunity_protein,keeble2006
+vancomycin,VanHAX,,target_modification,marshall1998
+alpha_amanitin,amanitin-insensitive RNA polymerase II,,target_replacement,johnson1980
+penicillin,,,none_required,brakhage2005
+aminoglycoside,KamB 16S rRNA methyltransferase,,target_modification,viducic2025
+cdc_cytolysin,,,none_required,gilbert2014
+tetrodotoxin,tetrodotoxin-resistant Nav,,target_replacement,vaelli2020
+bufadienolide,insensitive Na+/K+-ATPase,,target_replacement,asrorov2023
+batrachotoxin,alkaloid-binding plasma globulin,,sequestration,alvarezbuylla2023
+thoeris,,,unknown,ofir2021

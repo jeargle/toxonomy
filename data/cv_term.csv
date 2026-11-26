@@ -63,3 +63,24 @@ dp.patchy,distribution_pattern,patchy / HGT signature,Sporadic distribution inco
 dp.restricted,distribution_pattern,lineage-restricted,Confined to one clade; apparent innovation.,,local
 dp.pandomain,distribution_pattern,pan-domain,Present across two or three domains of life.,,local
 dp.unknown,distribution_pattern,unknown,,,local
+mt.membrane,molecular_target,membrane bilayer,Lipid bilayer integrity of the target cell.,,local
+mt.chol_membrane,molecular_target,cholesterol-containing membrane,Membranes bearing cholesterol or related sterols.,,local
+mt.phospholipid,molecular_target,membrane phospholipid,Phospholipid headgroups hydrolysed enzymatically.,,local
+mt.lipid_ii,molecular_target,lipid II,Peptidoglycan precursor at the membrane face.,,local
+mt.pbp,molecular_target,penicillin-binding protein,Transpeptidases of cell-wall synthesis.,,local
+mt.tubulin,molecular_target,beta-tubulin,Microtubule subunit.,,local
+mt.nav,molecular_target,voltage-gated sodium channel,Nav channel pore.,,local
+mt.nka,molecular_target,Na+/K+-ATPase,Sodium-potassium pump.,,local
+mt.dna,molecular_target,double-stranded DNA,Genomic DNA of the target cell.,,local
+mt.rnapii,molecular_target,RNA polymerase II,Eukaryotic nuclear RNA polymerase II.,,local
+mt.nad,molecular_target,NAD+ pool,"Cellular NAD+, depleted rather than bound.",,local
+cn.steroid_glycoside,chemical_nature,steroid glycoside,Cardenolides and bufadienolides.,,local
+cn.disulfide_peptide,chemical_nature,disulfide-rich peptide,Short ribosomal peptide stabilised by disulfide bonds.,,local
+ma.phospholipase,mode_of_action,phospholipase,Enzymatic hydrolysis of membrane phospholipid; catalytic.,,local
+ma.dnase,mode_of_action,DNA endonuclease,Cleavage of double-stranded DNA; catalytic.,,local
+ma.nadase,mode_of_action,NAD+ glycohydrolase,Depletion of the NAD+ pool; catalytic.,GO:0061809,GO
+ma.channel_block,mode_of_action,ion channel block,Occlusion of an ion channel pore; stoichiometric.,,local
+ma.covalent,mode_of_action,covalent enzyme inactivation,Irreversible acylation or alkylation of the target enzyme.,,local
+ma.microtubule,mode_of_action,microtubule stabilisation,Suppression of microtubule dynamics by subunit binding.,,local
+dl.injected,delivery,injected (venom apparatus),"Delivered by fang, stinger, radular tooth or nematocyst.",,local
+sp.binding_protein,self_protection,sequestering binding protein,A carrier that binds the toxin and keeps it from the producer's own target.,,local

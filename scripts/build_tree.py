@@ -32,12 +32,14 @@ def fetch_ncbi(taxids):
     resp.raise_for_status()
     out = {}
     for node in ET.fromstring(resp.text).findall("Taxon"):
+        name = node.findtext("ScientificName")
         ex = node.find("LineageEx")
         lineage = [t.findtext("ScientificName") for t in ex.findall("Taxon")] if ex is not None else []
-        out[node.findtext("ScientificName")] = {
+        out[name] = {
             "taxid": int(node.findtext("TaxId")), "rank": node.findtext("Rank"),
             "lineage_str": node.findtext("Lineage"), "lineage": lineage,
-            "domain": next((d for d in lineage if d in DOMAINS), None)}
+            "domain": next((d for d in lineage if d in DOMAINS),
+                           name if name in DOMAINS else None)}
     return out
 
 
@@ -53,13 +55,27 @@ def match_ott(names):
 
 
 def induced_subtree(ott_ids):
-    """Open Tree induced subtree; returns (newick, broken_ott_ids)."""
-    resp = requests.post(OTL + "tree_of_life/induced_subtree", timeout=90,
-                         json={"ott_ids": list(ott_ids), "label_format": "name_and_id"})
+    """Open Tree induced subtree; returns (newick, broken_ott_ids, pruned_ott_ids).
+
+    Ids absent from the synthetic tree make the whole call fail with HTTP 400,
+    so they are dropped and the call retried once. "broken" ids are in the tree
+    but not as a node of their own; "pruned" ids are not in it at all.
+    """
+    ids = list(ott_ids)
+    pruned = set()
+    for _ in range(2):
+        resp = requests.post(OTL + "tree_of_life/induced_subtree", timeout=90,
+                             json={"ott_ids": ids, "label_format": "name_and_id"})
+        if resp.status_code == 200:
+            body = resp.json()
+            broken = {int(k.replace("ott", "")) for k in body.get("broken", {})}
+            return body["newick"], broken, pruned
+        unknown = resp.json().get("unknown", {})
+        if not unknown:
+            resp.raise_for_status()
+        pruned |= {int(k.replace("ott", "")) for k in unknown}
+        ids = [i for i in ids if i not in pruned]
     resp.raise_for_status()
-    body = resp.json()
-    broken = {int(k.replace("ott", "")) for k in body.get("broken", {})}
-    return body["newick"], broken
 
 
 def relabel(newick, ott_to_name):
@@ -117,20 +133,22 @@ def main():
 
     # One call over ALL taxa to learn which are broken on the Open Tree backbone,
     # then a eukaryote-only call for the tree itself (bacteria go to the cladogram).
-    _, broken = induced_subtree([ott[n] for n in names if n in ott])
+    _, broken, pruned = induced_subtree([ott[n] for n in names if n in ott])
     euk = [n for n in names if ncbi.get(n, {}).get("domain") == "Eukaryota"]
-    newick, _ = induced_subtree([ott[n] for n in euk if n in ott])
+    euk_ids = [ott[n] for n in euk if n in ott and ott[n] not in pruned]
+    newick, _, _ = induced_subtree(euk_ids)
     ott_to_name = {v: k for k, v in ott.items()}
     (data / "tree_eukaryota.nwk").write_text(relabel(newick, ott_to_name) + "\n")
 
     pro = [n for n in names if ncbi.get(n, {}).get("domain") in ("Bacteria", "Archaea")]
     paths = {n: ncbi[n]["lineage"] + [n] for n in pro}
-    (data / "tree_bacteria.nwk").write_text(cladogram(paths, set(pro)) + "\n")
+    (data / "tree_bacteria_archaea.nwk").write_text(cladogram(paths, set(pro)) + "\n")
 
     with (data / "taxon.csv").open("w", newline="") as handle:
         out = csv.writer(handle)
         out.writerow(["ncbi_taxid", "scientific_name", "rank", "domain",
-                      "ncbi_lineage", "gtdb_lineage", "ott_id", "ott_broken"])
+                      "ncbi_lineage", "gtdb_lineage", "ott_id", "ott_broken",
+                      "ott_absent"])
         for name in names:
             rec = ncbi[name]
             gtdb = None
@@ -139,9 +157,10 @@ def main():
                 gtdb_up = gtdb is not None
             out.writerow([rec["taxid"], name, rec["rank"], rec["domain"],
                           rec["lineage_str"], gtdb, ott.get(name),
-                          int(ott.get(name) in broken)])
-    print(f"{len(euk)} eukaryote tips, {len(pro)} bacterial/archaeal nodes, "
-          f"{len(broken)} broken on the Open Tree backbone")
+                          int(ott.get(name) in broken),
+                          int(ott.get(name) in pruned)])
+    print(f"{len(euk)} eukaryote taxa, {len(pro)} bacterial/archaeal nodes, "
+          f"{len(broken)} broken and {len(pruned)} absent on the Open Tree backbone")
 
 
 if __name__ == "__main__":

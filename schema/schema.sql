@@ -66,7 +66,10 @@ CREATE TABLE taxon (
     ncbi_lineage    TEXT,
     gtdb_lineage    TEXT,
     ott_id          INTEGER,
-    ott_broken      INTEGER NOT NULL DEFAULT 0 CHECK (ott_broken IN (0,1))
+    ott_broken      INTEGER NOT NULL DEFAULT 0 CHECK (ott_broken IN (0,1)),
+    -- ott_absent: not present in the Open Tree synthetic tree at all (vs
+    -- ott_broken, which is present but not as a node of its own).
+    ott_absent      INTEGER NOT NULL DEFAULT 0 CHECK (ott_absent IN (0,1))
 );
 
 -- ------------------------------------------------------------------ producers

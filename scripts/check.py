@@ -14,7 +14,9 @@ from Bio import Phylo
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-TREES = {"Eukaryota": "tree_eukaryota.nwk", "Bacteria": "tree_bacteria.nwk"}
+TREE_OF_DOMAIN = {"Eukaryota": "tree_eukaryota.nwk",
+                  "Bacteria": "tree_bacteria_archaea.nwk",
+                  "Archaea": "tree_bacteria_archaea.nwk"}
 FACETS = {"chemical_nature", "molecular_target", "mode_of_action", "delivery",
           "self_protection", "antagonist_relation", "mobility_context",
           "distribution_pattern"}
@@ -30,6 +32,17 @@ def tree_labels(fname):
     """Every labelled node in a Newick file, tips and internal alike."""
     tree = Phylo.read(str(DATA / fname), "newick")
     return {c.name for c in tree.find_clades() if c.name}
+
+
+def check_not_empty(problems):
+    """A table that silently lost its rows should fail, not pass."""
+    required = ["entity.csv", "cv_term.csv", "entity_facet.csv", "producer.csv",
+                "taxon.csv", "reference.csv"]
+    for name in required:
+        if not (DATA / name).exists():
+            problems.append(f"{name}: missing")
+        elif not rows(name):
+            problems.append(f"{name}: no data rows")
 
 
 def check_vocabulary(problems):
@@ -49,9 +62,17 @@ def check_vocabulary(problems):
 
 
 def check_taxa(problems):
-    """Every producer resolves to a taxon row and a node on its domain tree."""
+    """Every producer resolves to a taxon row and a node on its domain tree.
+
+    Eukaryotes flagged ott_broken or ott_absent cannot be placed: the Open Tree
+    induced subtree is their only backbone, so they are reported as unplaceable
+    rather than failed. Bacteria and Archaea always get a node in the NCBI
+    cladogram, so a missing label there is a real failure.
+    """
     taxa = {t["scientific_name"]: t for t in rows("taxon.csv")}
-    labels = {d: tree_labels(f) for d, f in TREES.items() if (DATA / f).exists()}
+    unplaceable = []
+    labels = {d: tree_labels(f) for d, f in TREE_OF_DOMAIN.items()
+              if (DATA / f).exists()}
     for row in rows("producer.csv"):
         name = row["taxon_name"]
         record = taxa.get(name)
@@ -61,8 +82,16 @@ def check_taxa(problems):
         if record["ncbi_taxid"] != row["ncbi_taxid"]:
             problems.append(f"producer: {name!r} taxid disagrees with taxon.csv")
         domain = record["domain"]
-        if domain in labels and name not in labels[domain]:
+        if domain not in labels or name in labels[domain]:
+            continue
+        flagged = record.get("ott_broken") == "1" or record.get("ott_absent") == "1"
+        if domain == "Eukaryota" and flagged:
+            unplaceable.append(name)
+        else:
             problems.append(f"producer: {name!r} is not a node on the {domain} tree")
+    if unplaceable:
+        print(f"note: {len(set(unplaceable))} taxon/taxa unplaceable on a backbone: "
+              f"{', '.join(sorted(set(unplaceable)))}")
 
 
 def check_references(problems):
@@ -82,6 +111,11 @@ def check_references(problems):
 
 def main():
     problems = []
+    check_not_empty(problems)
+    if problems:
+        for problem in problems:
+            print(f"FAIL {problem}")
+        return 1
     check_vocabulary(problems)
     check_taxa(problems)
     check_references(problems)

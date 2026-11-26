@@ -27,3 +27,29 @@ thiostrepton,Thiostrepton,bgc,,Thiopeptide RiPP binding the 23S rRNA/L11 region 
 erythromycin,Erythromycin,bgc,,Macrolide polyketide binding the nascent peptide exit tunnel of the 50S subunit.
 kirromycin,Kirromycin,bgc,mocimycin,Elfamycin-class polyketide locking EF-Tu on the ribosome.
 odilorhabdin,Odilorhabdin,bgc,ODL,Cationic non-ribosomal peptide binding the 30S subunit.
+alpha_hemolysin,Alpha-hemolysin (Hla),gene_family,alpha-toxin,Heptameric beta-barrel pore-forming toxin of Staphylococcus aureus.
+aerolysin_alp,Aerolysin-like beta-PFT,gene_family,ALP,"Beta-pore-forming fold found across bacteria, fungi, plants and animals."
+biomphalysin,Biomphalysin,gene_family,,Aerolysin-family pore-forming protein used by a snail against its trematode parasite.
+cdc_cytolysin,Cholesterol-dependent cytolysin,gene_family,"CDC; listeriolysin O, pneumolysin",Sterol-dependent MACPF/CDC pore former.
+macpf_mpeg1,MACPF perforin-2 (MPEG1),gene_family,perforin-2,Animal MACPF pore former of the same superfamily as the bacterial CDCs.
+gasdermin_bact,Bacterial gasdermin,gene_family,,Pore-forming antiphage effector; homologous to animal pyroptosis gasdermins.
+pla2_venom,Venom phospholipase A2,gene_family,svPLA2,Secreted PLA2 recruited into snake venom by duplication and neofunctionalisation.
+plc_alpha_toxin,Clostridial alpha-toxin (PLC),gene_family,,Zinc metallophospholipase C that hydrolyses membrane phospholipid.
+tetrodotoxin,Tetrodotoxin,compound,TTX,"Guanidinium alkaloid Nav blocker; bacterial in origin, sequestered by animals."
+saxitoxin,Saxitoxin,bgc,STX; paralytic shellfish toxin,Alkaloid Nav blocker made by cyanobacteria and dinoflagellates.
+bufadienolide,Bufadienolide,compound,bufotoxin,Toad steroid glycoside inhibiting the Na+/K+-ATPase.
+cardenolide,Cardenolide,compound,cardiac glycoside,Plant steroid glycoside inhibiting the Na+/K+-ATPase.
+conotoxin,Conotoxin,gene_family,,Disulfide-rich injected peptides of cone snails targeting ion channels and receptors.
+batrachotoxin,Batrachotoxin,compound,BTX,Steroidal alkaloid Nav agonist sequestered by poison frogs from dietary arthropods.
+paclitaxel,Paclitaxel,bgc,taxol,Diterpenoid that stabilises microtubules by binding beta-tubulin.
+alpha_amanitin,Alpha-amanitin,bgc,amatoxin,Bicyclic RiPP of Amanita that inhibits RNA polymerase II.
+vancomycin,Vancomycin,bgc,,Glycopeptide that sequesters the D-Ala-D-Ala terminus of lipid II.
+penicillin,Penicillin,bgc,beta-lactam,Fungal beta-lactam that covalently inactivates penicillin-binding proteins.
+nisin,Nisin,bgc,lantibiotic,Lantibiotic RiPP that binds lipid II and also forms pores.
+colicin_e2,Colicin E2,gene_family,,Plasmid-encoded DNase colicin neutralised by the Im2 immunity protein.
+pago_short,Short prokaryotic Argonaute,gene_family,short pAgo,Nucleic-acid-guided defense effector that triggers an associated NADase.
+thoeris,Thoeris (ThsA/ThsB),gene_family,,TIR-domain sensor plus SIR2 NADase; aborts phage infection by NAD+ depletion.
+sarm1,SARM1 TIR NADase,gene_family,,Animal TIR NADase executing axon degeneration; same chemistry as bacterial TIR defense.
+halocin,Halocin,gene_family,archaeocin,Proteinaceous antimicrobial of haloarchaea active against other haloarchaea.
+sulfolobicin,Sulfolobicin,gene_family,,Membrane-vesicle-associated proteinaceous toxin of Sulfolobus.
+aminoglycoside,Aminoglycoside (kanamycin class),bgc,,Aminocyclitol antibiotic binding the 16S rRNA decoding site.
