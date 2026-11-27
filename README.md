@@ -30,6 +30,7 @@ terms of which 80 are in use, 426 facet assignments, 74 references.
     scripts/build_db.py    rebuild toxonomy.db from schema + data
     scripts/build_tree.py  refetch taxonomy and rebuild the backbone
     scripts/reconcile.py   score each entity's distribution against the backbone
+    scripts/build_site.py  render the database as a static website (_site/)
     scripts/check.py       integrity checks beyond what the foreign keys catch
     scripts/queries.sql    the queries the scheme exists to answer
 
@@ -41,6 +42,7 @@ Dependencies are managed with [uv](https://docs.astral.sh/uv/):
     uv run python scripts/build_db.py toxonomy.db   # schema + data -> toxonomy.db
     uv run python scripts/check.py                  # catalog integrity
     uv run python scripts/reconcile.py              # distribution scores
+    uv run python scripts/build_site.py             # toxonomy.db -> _site/
 
 `build_db.py` rebuilds from scratch each time; the CSVs are the source of truth and the
 database is derived, so it never needs migrating during schema development.
@@ -48,6 +50,17 @@ database is derived, so it never needs migrating during schema development.
 `scripts/build_tree.py` refetches the backbone from NCBI, Open Tree and GTDB. Run it by
 hand when the taxon set changes and commit the regenerated `taxon.csv` and `tree_*.nwk`;
 it is deliberately kept out of CI so pushes do not hit those services.
+
+## Website
+
+Browse the catalog at <https://jeargle.github.io/toxonomy/>. Every push to `main` that
+passes the checks rebuilds the database, renders it with `scripts/build_site.py` and
+publishes it to GitHub Pages. The site is static: one page per entity, vocabulary term,
+fold, taxon and reference, a filterable entity index, and `toxonomy.db` / `toxonomy.json`
+downloads. Links are relative, so `_site/index.html` also works opened straight from disk.
+
+Facet assignments with no `ref_id` are shown as *uncited*, and a `pan-domain` facet that the
+producer rows do not support is flagged on the entity page.
 
 ## What the seed data already shows
 

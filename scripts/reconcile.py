@@ -62,45 +62,76 @@ def classify(domains, spans):
     return "lineage-restricted"
 
 
-def main():
-    data = ROOT / "data"
-    prod = list(csv.DictReader((data / "producer.csv").open()))
-    taxa = {r["scientific_name"]: r["domain"]
-            for r in csv.DictReader((data / "taxon.csv").open())}
-    trees = load_trees()
-    # Only de novo producers describe where a toxin is MADE. Organisms that
-    # acquired the genes, host a symbiont that makes it, or sequester it from
-    # the diet carry it without making it, and would otherwise inflate the
-    # apparent distribution across the tree.
+def split_producers(prod):
+    """Partition producer rows into made-here and carried-only taxon sets per entity.
+
+    Only de novo producers describe where a toxin is MADE. Organisms that
+    acquired the genes, host a symbiont that makes it, or sequester it from
+    the diet carry it without making it, and would otherwise inflate the
+    apparent distribution across the tree.
+    """
     carried = {"horizontally_acquired", "sequestered", "symbiont_derived"}
     by_entity, acquired = {}, {}
     for row in prod:
         bucket = acquired if row["provenance"] in carried else by_entity
         bucket.setdefault(row["entity_id"], set()).add(row["taxon_name"])
+    return by_entity, acquired
 
-    print(f"{'entity':20s} {'domains':18s} {'n':>2s} {'cov':>5s}  pattern")
+
+def score_entity(present, taxa, trees):
+    """Per-backbone spans for one entity's de novo producer set."""
+    domains = sorted({taxa.get(t) for t in present if taxa.get(t)})
+    spans = {}
+    for fname in sorted({TREE_OF_DOMAIN[d] for d in domains if d in TREE_OF_DOMAIN}):
+        catalog = {t for t, d in taxa.items() if TREE_OF_DOMAIN.get(d) == fname}
+        span = score_one(trees[fname], present & catalog, catalog)
+        if span:
+            spans[fname] = span
+    return domains, spans
+
+
+def score_all(data=None):
+    """One record per scored entity, made-here entities first, then carrier-only.
+
+    Each record: entity_id, domains (list), n (int), coverage (float or None),
+    pattern (str), carried_by (sorted list of carrier taxa).
+    """
+    data = Path(data) if data else ROOT / "data"
+    prod = list(csv.DictReader((data / "producer.csv").open()))
+    taxa = {r["scientific_name"]: r["domain"]
+            for r in csv.DictReader((data / "taxon.csv").open())}
+    trees = load_trees()
+    by_entity, acquired = split_producers(prod)
+    out = []
     for entity, present in sorted(by_entity.items()):
-        domains = sorted({taxa.get(t) for t in present if taxa.get(t)})
-        spans = {}
-        for fname in sorted({TREE_OF_DOMAIN[d] for d in domains if d in TREE_OF_DOMAIN}):
-            catalog = {t for t, d in taxa.items()
-                       if TREE_OF_DOMAIN.get(d) == fname}
-            span = score_one(trees[fname], present & catalog, catalog)
-            if span:
-                spans[fname] = span
+        domains, spans = score_entity(present, taxa, trees)
         if not spans:
             continue
-        got = acquired.get(entity)
-        total = sum(s["n_present"] for s in spans.values())
-        cov = min(s["coverage"] for s in spans.values())
-        tag = classify(domains, spans)
-        if got:
-            tag += f"; carried by {', '.join(sorted(got))}"
-        print(f"{entity:20s} {','.join(domains):18s} {total:2d} {cov:5.2f}  {tag}")
+        out.append({"entity_id": entity, "domains": domains,
+                    "n": sum(s["n_present"] for s in spans.values()),
+                    "coverage": min(s["coverage"] for s in spans.values()),
+                    "pattern": classify(domains, spans),
+                    "carried_by": sorted(acquired.get(entity, ()))})
     for entity, taxa_set in sorted(acquired.items()):
         if entity not in by_entity:
-            print(f"{entity:20s} {'(recipient only)':18s} {len(taxa_set):2d}    -  "
-                  f"carried, not made, by: {', '.join(sorted(taxa_set))}")
+            out.append({"entity_id": entity, "domains": [], "n": len(taxa_set),
+                        "coverage": None, "pattern": "carrier only",
+                        "carried_by": sorted(taxa_set)})
+    return out
+
+
+def main():
+    print(f"{'entity':20s} {'domains':18s} {'n':>2s} {'cov':>5s}  pattern")
+    for r in score_all():
+        if r["coverage"] is None:
+            print(f"{r['entity_id']:20s} {'(recipient only)':18s} {r['n']:2d}    -  "
+                  f"carried, not made, by: {', '.join(r['carried_by'])}")
+            continue
+        tag = r["pattern"]
+        if r["carried_by"]:
+            tag += f"; carried by {', '.join(r['carried_by'])}"
+        print(f"{r['entity_id']:20s} {','.join(r['domains']):18s} {r['n']:2d} "
+              f"{r['coverage']:5.2f}  {tag}")
     print("\nCounts are lower bounds over sampled taxa; absence means not recorded.")
 
 

@@ -10,3 +10,6 @@ toxonomy.db
 
 # macOS
 .DS_Store
+
+# Rendered website (rebuild: python scripts/build_site.py)
+_site/
